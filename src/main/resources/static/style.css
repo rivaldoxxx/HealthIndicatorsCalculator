@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+}
+
+/* Container for Forms and Results */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Home Page Specific Styles */
+.home-container {
+    max-width: 500px;
+    padding: 40px;
+}
+
+/* Intro Paragraph */
+.intro {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Action Section */
+.action-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.action {
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Button Styles */
+button, .btn, .submit-btn {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover, .btn:hover, .submit-btn:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+
+/* Result Container Styles */
+.result-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.result p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.result p strong {
+    color: #4facfe;
+    font-weight: bold;
+}
+
+/* Links */
+.back-link, a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.back-link:hover, a:hover {
+    color: #00f2fe;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container, .home-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    p, .intro {
+        font-size: 14px;
+    }
+
+    button, .btn, .submit-btn {
+        font-size: 14px;
+    }
+}

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BMI Result</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
-
+<div class="container result-container">
+    <h2>Your BMI Result</h2>
+    <div class="result">
+        <p><strong>BMI:</strong> <span th:text="${calculation.result}"></span></p>
+        <p><strong>Advice:</strong> <span th:text="${calculation.advice}"></span></p>
+    </div>
+    <a th:href="@{/}" class="back-link">Back to Home</a>
+</div>
 </body>
 </html>

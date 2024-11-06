@@ -1,4 +1,7 @@
 package com.example.healtindicatorscalculator.repositories;
 
-public class CalculationRepository {
+import com.example.healtindicatorscalculator.model.Calculation;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CalculationRepository extends JpaRepository<Calculation, Long> {
 }
