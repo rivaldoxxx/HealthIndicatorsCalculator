@@ -156,3 +156,106 @@ button:hover, .btn:hover, .submit-btn:hover {
         font-size: 14px;
     }
 }
+/* Additional Info Section */
+.additional-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-info h3 {
+    color: #4facfe;
+    margin-bottom: 10px;
+}
+
+.additional-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.additional-info li {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
+
+/* Result Container Styles */
+.result-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.result p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.result p strong {
+    color: #4facfe;
+    font-weight: bold;
+}
+
+/* Calorie Needs Table */
+.calorie-needs {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.calorie-needs h3 {
+    color: #4facfe;
+    margin-bottom: 10px;
+}
+
+.calorie-needs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calorie-needs table, .calorie-needs th, .calorie-needs td {
+    border: 1px solid #ddd;
+}
+
+.calorie-needs th, .calorie-needs td {
+    padding: 10px;
+    text-align: center;
+}
+
+.calorie-needs th {
+    background-color: #f0f8ff;
+    color: #333;
+    font-weight: bold;
+}
+
+.calorie-needs td {
+    color: #555;
+}
+
+.calorie-needs p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Back Link */
+.back-link {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #00f2fe;
+}

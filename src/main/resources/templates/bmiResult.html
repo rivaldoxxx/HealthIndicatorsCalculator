@@ -9,9 +9,27 @@
 <div class="container result-container">
     <h2>Your BMI Result</h2>
     <div class="result">
-        <p><strong>BMI:</strong> <span th:text="${calculation.result}"></span></p>
+        <p><strong>BMI:</strong> <span th:text="${calculation.result}"></span> kg/m<sup>2</sup>
+            <span th:if="${calculation.result < 18.5}"> (Underweight)</span>
+            <span th:if="${calculation.result >= 18.5 && calculation.result < 24.9}"> (Normal)</span>
+            <span th:if="${calculation.result >= 24.9 && calculation.result < 29.9}"> (Overweight)</span>
+            <span th:if="${calculation.result >= 29.9}"> (Obese)</span>
+        </p>
         <p><strong>Advice:</strong> <span th:text="${calculation.advice}"></span></p>
     </div>
+
+    <div class="additional-info">
+        <h3>Additional Information</h3>
+        <ul>
+            <li>Healthy BMI range: 18.5 kg/m² - 25 kg/m²</li>
+            <li>Healthy weight for your height:
+                <span th:text="${calculation.healthyWeightMin}">0</span> kg -
+                <span th:text="${calculation.healthyWeightMax}">0</span> kg</li>
+            <li>BMI Prime: <span th:text="${calculation.bmiPrime}">0</span></li>
+            <li>Ponderal Index: <span th:text="${calculation.ponderalIndex}">0</span> kg/m³</li>
+        </ul>
+    </div>
+
     <a th:href="@{/}" class="back-link">Back to Home</a>
 </div>
 </body>
